@@ -1,0 +1,48 @@
+qtremoteobjects-everywhere-src (5.15.1-0) focal; urgency=medium
+
+  * Port to focal 5.15.1
+
+ -- M.Angel Juan <m.angel.juan@gmail.com>  Mon, 21 Sep 2020 15:38:25 +0200
+
+qtremoteobjects-everywhere-src (5.14.2-2) unstable; urgency=medium
+
+  * Upload to unstable.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Wed, 24 Jun 2020 12:39:29 +0300
+
+qtremoteobjects-everywhere-src (5.14.2-1) experimental; urgency=medium
+
+  * New upstream release.
+  * Bump Qt build-dependencies to 5.14.2.
+  * Update to debhelper compat level 13.
+    - Drop dh_missing override, --fail-missing is now the default.
+  * Remove -Wl,--as-needed flag, it is the default in Bullseye.
+  * Add a build-dependency on qtdeclarative5-private-dev.
+  * Add Qt_5.13 and Qt_5.14 tags to debian/libqt5remoteobjects5.symbols.
+  * Make libqt5remoteobjects5-dev depend on -bin (closes: #953431).
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Wed, 13 May 2020 21:23:21 +0300
+
+qtremoteobjects-everywhere-src (5.12.5-2) unstable; urgency=medium
+
+  [ Matthias Klumpp ]
+  * Team upload
+  * Upload to unstable
+  * Do not run tests in parallel
+    - Parallelized test runs currently fail. By running tests in
+      sequence we can make test failures fatal again.
+  * Bump standards version (No changes needed)
+
+  [ Dmitry Shachnev ]
+  * Mention qt5-assistant in the qtremoteobjects5-doc description,
+    instead of qttools5-dev-tools.
+  * Update symbols files from buildds’ logs.
+
+ -- Matthias Klumpp <mak@debian.org>  Sat, 15 Feb 2020 22:54:28 +0100
+
+qtremoteobjects-everywhere-src (5.12.5-1) experimental; urgency=medium
+
+  [ Alexander Volkov ]
+  * Initial release (closes: #944536).
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Fri, 20 Dec 2019 22:09:35 +0300
